@@ -3,28 +3,6 @@
 import { Particles } from "@/components/ui/particles"
 import { ArrowDownIcon } from "lucide-react"
 import Link from "next/link"
-import { ReactNode } from "react"
-
-interface ButtonProps {
-  children: ReactNode
-  className?: string
-  asChild?: boolean
-  variant?: "default" | "outline"
-}
-
-function Button({ children, className = "", variant = "default" }: ButtonProps) {
-  const baseStyle = "px-4 py-2 rounded-md font-medium transition-colors duration-200 inline-flex items-center"
-  const variantStyles = {
-    default: "bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600",
-    outline: "border border-neutral-400 text-neutral-200 hover:bg-neutral-800/50"
-  }
-  
-  return (
-    <button className={`${baseStyle} ${variantStyles[variant]} ${className}`}>
-      {children}
-    </button>
-  )
-}
 
 export function HeroSection() {
   return (
