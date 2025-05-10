@@ -1,0 +1,108 @@
+{
+  "timeline": [
+    {
+      "era": "Early Foundations",
+      "events": [
+        {
+          "year": "1990s",
+          "title": "Active Shape Models (ASMs)",
+          "description": "Early approaches by Cootes et al. emerged for facial analysis, followed by Active Appearance Models (AAMs) which incorporated both shape and texture information. These model-based approaches required explicit decisions about which points to track.",
+          "image": "images/AAM.jpeg",
+          "citation": "Cootes, Timothy F., Gareth J. Edwards, and Christopher J. Taylor. \"Active Appearance Models.\" IEEE Transactions on Pattern Analysis and Machine Intelligence 23, no. 6 (2001)."
+        }
+      ]
+    },
+    {
+      "era": "Dataset Proliferation and Fragmentation",
+      "events": [
+        {
+          "year": "2007",
+          "title": "HumanEva-I dataset",
+          "description": "First 3D pose estimation dataset, contributing to the early fragmentation of keypoint standards by introducing its own keypoint scheme.",
+          "image": "images/heva.png",
+          "citation": ""
+        },
+        {
+          "year": "2008",
+          "title": "Buffy Stickmen dataset",
+          "description": "Introduced another keypoint configuration, further contributing to the fragmentation of standards in human pose estimation research.",
+          "image": "images/buffy.png",
+          "citation": "Ferrari, Vittorio, Loic Fevrier, Frédéric Jurie, and Cordelia Schmid. \"Groups of Adjacent Contour Segments for Object Detection.\" IEEE Transactions on Pattern Analysis and Machine Intelligence 30, no. 1 (2008)."
+        },
+        {
+          "year": "2009",
+          "title": "ETHZ Upper-body dataset",
+          "description": "Added to the growing number of datasets with incompatible keypoint schemes, making cross-dataset training increasingly difficult.",
+          "image": "",
+          "citation": ""
+        },
+        {
+          "year": "2010",
+          "title": "LSP (Leeds Sports Pose) dataset",
+          "description": "Further contributed to the fragmentation of keypoint standards with its own configuration, reflecting different research priorities and practical constraints.",
+          "image": "images/lsp.png",
+          "citation": "Johnson, Sam, and Mark Everingham. \"Clustered Pose and Nonlinear Appearance Models for Human Pose Estimation.\" In British Machine Vision Conference. BMVA Press, 2010."
+        },
+        {
+          "year": "2013",
+          "title": "FLIC and Penn Action datasets",
+          "description": "Each introduced different keypoint configurations, creating significant challenges for cross-dataset training, evaluation metrics, and meaningful comparison of progress across research groups.",
+          "image": "",
+          "citation": ""
+        }
+      ]
+    },
+    {
+      "era": "The Move Toward Standardization",
+      "events": [
+        {
+          "year": "2013",
+          "title": "300-W Challenge (300 Faces In-The-Wild)",
+          "description": "First facial landmark detection competition using in-the-wild images. Unified fragmented facial datasets (LFPW with 35 points, AFLW with 21, HELEN with 194) under one consistent annotation method, adopting the Multi-PIE 68-point scheme.",
+          "image": "images/300faces_og.jpg",
+          "citation": "Sagonas, Christos, Georgios Tzimiropoulos, Stefanos Zafeiriou, and Maja Pantic. \"300 Faces in-the-Wild Challenge: The First Facial Landmark Localization Challenge.\" In 2013 IEEE International Conference on Computer Vision Workshops. 2013."
+        },
+        {
+          "year": "2014",
+          "title": "MPII Human Pose dataset",
+          "description": "Became highly influential in human pose estimation research, though it was part of the field's continuing struggle to converge on a single skeletal representation.",
+          "image": "images/MPII.png",
+          "citation": "Andriluka, Mykhaylo, Leonid Pishchulin, Peter Gehler, and Bernt Schiele. \"2D Human Pose Estimation: New Benchmark and State of the Art Analysis.\" In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2014."
+        },
+        {
+          "year": "2016",
+          "title": "COCO dataset standardization",
+          "description": "Standardized the 17-point human pose scheme, marking a pivotal moment similar to the 300-W Challenge for facial landmarks. This standardization addressed the fragmentation that had challenged cross-dataset training and meaningful comparison of progress.",
+          "image": "images/coco_keypoint_scheme.jpg",
+          "citation": "https://github.com/cocodataset/cocodataset.github.io/blob/master/dataset/keypoints-2016.htm"
+        },
+        {
+          "year": "2016",
+          "title": "Sagonas et al. facial landmark reliability findings",
+          "description": "Demonstrated empirically that keypoints with clear semantic meaning (like eye corners) had higher inter-annotator reliability than those without (like chin or face contour points). This raised critical questions about the 'ground truth' and its varying degrees of reliability.",
+          "image": "images/300faces_chin.jpg",
+          "citation": "Sagonas, Christos, Epameinondas Antonakos, Georgios Tzimiropoulos, Stefanos Zafeiriou, and Maja Pantic. \"300 Faces In-The-Wild Challenge: Database and results.\" Image and Vision Computing 47 (2016)"
+        }
+      ]
+    },
+    {
+      "era": "Cross-Species Application",
+      "events": [
+        {
+          "year": "2019",
+          "title": "Cao et al. cross-domain adaptation",
+          "description": "Explored transfer learning between human and animal poses, highlighting the 'domain shift' problem between humans and animals. Pointed out that differences in defined 'bones' between keypoints would cause domain shift even among similar species, amplifying the challenge when applying human-derived schemes to animals.",
+          "image": "images/cao_animals.jpg",
+          "citation": "Cao, Jinkun, Hongyang Tang, Hao-Shu Fang, Xiaoyong Shen, Cewu Lu, and Yu-Wing Tai. \"Cross-Domain Adaptation for Animal Pose Estimation.\" In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). 2019."
+        },
+        {
+          "year": "2021",
+          "title": "AP-10K dataset",
+          "description": "Applied a COCO-like 17-keypoint scheme across 54 species from 23 animal families. This pragmatic approach leveraged human data for animal pose estimation, while raising questions about imposing ill-suited human-centric keypoint schemes onto the vast anatomical diversity of the animal kingdom.",
+          "image": "images/ap10k.png",
+          "citation": "Yu, Hang, Yufei Xu, Jing Zhang, Wei Zhao, Ziyu Guan, and Dacheng Tao. \"AP-10K: A Benchmark for Animal Pose Estimation in the Wild.\" In Thirty-Fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track. 2021."
+        }
+      ]
+    }
+  ]
+} 
