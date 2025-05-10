@@ -19,10 +19,13 @@ export function HeroSection() {
           The Points That Define Us 
           <span className="text-neutral-400"> (and Animals)</span>
         </h1>
-        <p className="mb-8 max-w-3xl text-lg text-neutral-300 md:text-xl">
+        <p className="mb-4 max-w-3xl text-lg text-neutral-300 md:text-xl">
           A historical analysis of AI keypoint conventions, examining how technical and practical compromises 
           shaped human body representation—and the consequences when these frameworks are applied to 
           diverse animal anatomies.
+        </p>
+        <p className="mb-8 max-w-3xl text-lg text-neutral-300 md:text-xl">
+          By examining this history, we gain insight into the <span className="text-purple-400">epistemic and subjective choices</span> embedded in these representation schemes—awareness that is crucial for developing more thoughtful approaches to representing diverse biological forms.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Link href="#timeline" className="bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600 px-4 py-2 rounded-md font-medium transition-colors duration-200 inline-flex items-center">
