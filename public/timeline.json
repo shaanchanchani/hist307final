@@ -34,7 +34,7 @@
           "title": "ETHZ Upper-body dataset",
           "description": "Added to the growing number of datasets with incompatible keypoint schemes, making cross-dataset training increasingly difficult.",
           "image": "",
-          "citation": ""
+          "citation": "Sigal, Leonid, Alexandru O. Balan, and Michael J. Black. “HumanEva: Synchronized Video and Motion Capture Dataset and Baseline Algorithm for Evaluation of Articulated Human Mo- tion.” International Journal of Computer Vision 87, no. 1 (2010)."
         },
         {
           "year": "2010",
